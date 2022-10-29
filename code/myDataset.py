@@ -46,7 +46,7 @@ class trafficGraphDataset(InMemoryDataset):
         return len(self.data_list)
 
     def get(self, idx):
-        'Generates one sample of data'
+        'Generates one sample of data (time window of x second containing all cars on the highway)'
         i = self.data_list[idx]
         graph_list = []
         # load data 

@@ -14,6 +14,8 @@ class GRNN_Cell(torch.nn.Module):
         '''
         in_channels: dimension of input feature
         out_channel: dimension of output (= dimension of hidden state)
+        K : number of heads
+        head_concat: concatenate the attention head and go through fc layer (v.s. take the avg of the attention head)
         graph_layer: SAGEConv, TransformerConv, GATConv,  GATv2Conv
         '''
         super().__init__()
