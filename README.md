@@ -19,7 +19,7 @@ We construct a spatial-temporal dynamic graph to represent vehicles on a highway
 A snapshot of normal vehicle trajectories in real-world HighD dataset capturing German highways. Each dot represents a car, and the line indicates its past trajectory. The first column shows the acceleration of the original input trajectory. Most times it is very pale, in this range around 0. When it becomes very visible, there is drastic acceleration/deceleration. The second column shows the speed. The third column shows the normalized reconstruction loss, which is also the anomaly score. All the vehicles has loss around 0 and are normal samples. The fourth column shows the reconstruction trajectory with largest probability, and it reconstructs the original inputs quite well.
 
 <div align='center'>
-<img src="Figure/norm.mov"></img>
+<img src="Figure/norm.gif"></img>
 </div>
 <br />
 
@@ -27,7 +27,7 @@ A snapshot of normal vehicle trajectories in real-world HighD dataset capturing 
 A snapshot of the largest anomaly in the HighD test set. In the third column, the red car with loss around 1 is the anomaly. The first plot shows that it is changing lane while having large deceleration, forcing the other car to change lane as well.
 
 <div align='center'>
-<img src="Figure/abn0.mov"></img>
+<img src="Figure/abn0.gif"></img>
 </div>
 <br />
 
